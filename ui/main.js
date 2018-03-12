@@ -17,7 +17,7 @@ var request=new XMLHttpRequest();
  
      
  }
- request.open('GET', 'http://http://anushkagupta279.imad.hasura-app.io/counter',true );
+ request.open('GET', 'http://http://anushkagupta279.imad.hasura-app.io/1',true );
  request.send(null);
 }
  
