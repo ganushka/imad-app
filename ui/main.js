@@ -14,8 +14,11 @@ var request=new XMLHttpRequest();
              document.getElementById('1').innerHTML=counter.toString();
          }
      }
- }
-}
  
+     
+ }
  request.open('GET', 'http://http://anushkagupta279.imad.hasura-app.io/counter',true );
  request.send(null);
+}
+ 
+ 
