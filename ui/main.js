@@ -13,3 +13,6 @@ var request=new XMLHttpRequest();
          }
      }
  }
+ 
+ request.open('GET', 'http://http://anushkagupta279.imad.hasura-app.io/counter',true );
+ request.send(null);
