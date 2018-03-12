@@ -7,8 +7,30 @@ app.use(morgan('combined'));
 
 
 var content={
+    title:"article-1",
+    heading:"hello",
+    content:`
+    <p> hhkjeh</p>
+    <p> hejh,/p>`
     
+};
+function create(data){
+    var title=data.title;
+    var content=data.content;
+    `<hmtl>
+    <head>
+    <title>
+    $[title]
+    </title>
+    </head>
+    <body>
+    $[content]
+    </body>
+    </html>
+    
+    `
 }
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
