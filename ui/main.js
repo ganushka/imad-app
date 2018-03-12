@@ -2,6 +2,7 @@ console.log('Loaded!');
 
 var button=document.getElementById('btn');
 var counter =0;
+button.onclick=function(){
 var request=new XMLHttpRequest();
  request.onreadystatechange=function()
  {
@@ -13,6 +14,7 @@ var request=new XMLHttpRequest();
          }
      }
  }
+}
  
  request.open('GET', 'http://http://anushkagupta279.imad.hasura-app.io/counter',true );
  request.send(null);
