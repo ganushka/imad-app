@@ -17,8 +17,20 @@ var request=new XMLHttpRequest();
  
      
  }
- request.open('GET', 'http://http://anushkagupta279.imad.hasura-app.io',true );
- request.send(null);
+ 
 }
  
  
+var names=document.getElementById('names');
+var n=names.value;
+var submit=document.getElementById("submit");
+submit.onclick=function()
+{
+    var l=['name1', 'name2'];
+    var list='';
+    for(var i=0;i<l.length;i++)
+    {
+        list='<li>'+l[i]+"</li>";
+    }
+    document.getElementById('names').innerHTML=list;
+}
