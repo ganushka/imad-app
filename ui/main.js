@@ -1,10 +1,10 @@
 console.log('Loaded!');
 
 var button=document.getElementById('btn');
-var request=new XMLHttpRequest();
+
 button.onclick=function(){
     
-
+var request=new XMLHttpRequest();
  request.onreadystatechange=function()
  {
      if(request.readyState==XMLHttpRequest.DONE)
