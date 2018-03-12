@@ -2,8 +2,14 @@ console.log('Loaded!');
 
 var button=document.getElementById('btn');
 var counter =0;
-button.onclick=function()
-{
-    counter = counter +1;
-    document.getElementById('1').innerHTML=counter+"";
-}
+var request=new XMLHttpRequest();
+ request.onreadystatechange=function()
+ {
+     if(request.readyState==XMLHttpRequest.DONE)
+     {
+         if(request.status==200){
+             var counter=request.responseText;
+             document.getElementById('1').innerHTML=counter.toString();
+         }
+     }
+ }
